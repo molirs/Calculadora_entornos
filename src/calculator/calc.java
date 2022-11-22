@@ -16,21 +16,24 @@ public class calc {
 
 	public static void main(String[] args) {
 		Scanner teclado=new Scanner(System.in);
-		int n1,n2,result;
-		String select;
+		int n1,n2,result,select;
 		System.out.println("Introduce el primer valor");
 		n1=teclado.nextInt();
 		System.out.println("Introduce el segundo valor");
 		n2=teclado.nextInt();
-		System.out.println("Porfavor seleccione operacion a realizar, +, -, /, * o x");
-		select=teclado.nextLine();
+		System.out.println("Porfavor seleccione operacion a realizar: ");
+		System.out.println("SUMA (1)");
+		System.out.println("RESTA (2)");
+		System.out.println("MULTIPLICACION (3)");
+		System.out.println("DIVISION (4)");
+		select=teclado.nextInt();
 		
 		switch(select) {
-			case "/":
+			case 4:
 				result=n1/n2;
 				System.out.println("El resultado de la division entera de "+n1+"/ "+n2+" es: "+result);
 			break;
-			case "*","x":
+			case 3:
 				result=n1*n2;
 			System.out.println("El resultado de la multiplicación "+n1+"X "+n2+" es: "+result);
 			break;
