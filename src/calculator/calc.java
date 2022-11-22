@@ -25,7 +25,9 @@ public class calc {
 		System.out.println("Porfavor seleccione operacion a realizar");
 		select=teclado.nextLine();
 		switch(select) {
-		
+		case "+":
+			result=n1+n2;
+			System.out.println("La suma de " +n1+ " y " +n2+" es " + result);
 		}
 	}
 	
