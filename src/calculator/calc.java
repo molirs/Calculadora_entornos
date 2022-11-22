@@ -25,7 +25,7 @@ public class calc {
 		System.out.println("Porfavor seleccione operacion a realizar");
 		select=teclado.nextLine();
 		switch(select) {
-
+		
 		}
 	}
 	
