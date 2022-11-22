@@ -1,5 +1,5 @@
 /**************************************************************************
-AUTOR: MIGUEL MOLINA QUEROL
+AUTORES: MIGUEL MOLINA QUEROL, DAVID BALLESTEROS SANCHEZ, CRISTIAN PRIETO
 FECHA INICIO: 14-11-2022
 FECHA DE FINALIZACION: 14-11-2022
 CENTRO: I.E.S. PABLO SERRANO
@@ -22,10 +22,18 @@ public class calc {
 		n1=teclado.nextInt();
 		System.out.println("Introduce el segundo valor");
 		n2=teclado.nextInt();
-		System.out.println("Porfavor seleccione operacion a realizar");
+		System.out.println("Porfavor seleccione operacion a realizar, +, -, /, * o x");
 		select=teclado.nextLine();
+		
 		switch(select) {
-
+			case "/":
+				result=n1/n2;
+				System.out.println("El resultado de la division entera de "+n1+"/ "+n2+" es: "+result);
+			break;
+			case "*","x":
+				result=n1*n2;
+			System.out.println("El resultado de la multiplicación "+n1+"X "+n2+" es: "+result);
+			break;
 		}
 	}
 	
