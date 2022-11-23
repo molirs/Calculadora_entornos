@@ -37,6 +37,10 @@ public class calc {
 				result=n1*n2;
 			System.out.println("El resultado de la multiplicación "+n1+"X "+n2+" es: "+result);
 			break;
+			case "1":
+			result=n1+n2;
+			System.out.println("La suma de " +n1+ " y " +n2+" es " + result);
+			break;
 		}
 	}
 	
